@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+newBspWizardPage.defaultLocation=D\:\\project\\FPGA\\2020-07-31_first_qsys\\software\\hello_world_bsp
+newBspWizardPage.sopcinfoFile=D\:\\project\\FPGA\\2020-07-31_first_qsys\\qsys.sopcinfo
+newSoftwareExampleWizardPage.defaultLocation=D\:\\project\\FPGA\\2020-07-31_first_qsys\\software\\nios_test
+newSoftwareExampleWizardPage.sopcinfoFile=D\:\\project\\FPGA\\2020-07-31_first_qsys\\qsys.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=D\:\\project\\FPGA\\2020-07-31_first_qsys\\software\\nios_test_bsp
