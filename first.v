@@ -45,7 +45,7 @@ assign sram1_clk = clk_80m_shift;
 	);
 
     qsys u0 (
-        .clk_clk       (clk),       //   clk.clk
+        .clk_clk       (clk_80m),       //   clk.clk
         .reset_reset_n (rst_n),  // reset.reset_n
 		  .led_export(led),
 		  

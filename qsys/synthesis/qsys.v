@@ -24,7 +24,9 @@ module qsys (
 		inout  wire [31:0] sram1_dq,      //      .dq
 		output wire [3:0]  sram1_dqm,     //      .dqm
 		output wire        sram1_ras_n,   //      .ras_n
-		output wire        sram1_we_n     //      .we_n
+		output wire        sram1_we_n,    //      .we_n
+		input  wire        uart0_rxd,     // uart0.rxd
+		output wire        uart0_txd      //      .txd
 	);
 
 	wire  [31:0] nios2_data_master_readdata;                                             // mm_interconnect_0:nios2_data_master_readdata -> nios2:d_readdata
@@ -66,7 +68,7 @@ module qsys (
 	wire  [31:0] mm_interconnect_0_epcs_flash_controller_0_epcs_control_port_writedata;  // mm_interconnect_0:epcs_flash_controller_0_epcs_control_port_writedata -> epcs_flash_controller_0:writedata
 	wire         mm_interconnect_0_ram_s1_chipselect;                                    // mm_interconnect_0:ram_s1_chipselect -> ram:chipselect
 	wire  [31:0] mm_interconnect_0_ram_s1_readdata;                                      // ram:readdata -> mm_interconnect_0:ram_s1_readdata
-	wire  [13:0] mm_interconnect_0_ram_s1_address;                                       // mm_interconnect_0:ram_s1_address -> ram:address
+	wire  [12:0] mm_interconnect_0_ram_s1_address;                                       // mm_interconnect_0:ram_s1_address -> ram:address
 	wire   [3:0] mm_interconnect_0_ram_s1_byteenable;                                    // mm_interconnect_0:ram_s1_byteenable -> ram:byteenable
 	wire         mm_interconnect_0_ram_s1_write;                                         // mm_interconnect_0:ram_s1_write -> ram:write
 	wire  [31:0] mm_interconnect_0_ram_s1_writedata;                                     // mm_interconnect_0:ram_s1_writedata -> ram:writedata
@@ -94,11 +96,19 @@ module qsys (
 	wire         mm_interconnect_0_sdram_1_s1_readdatavalid;                             // sdram_1:za_valid -> mm_interconnect_0:sdram_1_s1_readdatavalid
 	wire         mm_interconnect_0_sdram_1_s1_write;                                     // mm_interconnect_0:sdram_1_s1_write -> sdram_1:az_wr_n
 	wire  [31:0] mm_interconnect_0_sdram_1_s1_writedata;                                 // mm_interconnect_0:sdram_1_s1_writedata -> sdram_1:az_data
+	wire         mm_interconnect_0_uart_0_s1_chipselect;                                 // mm_interconnect_0:uart_0_s1_chipselect -> uart_0:chipselect
+	wire  [15:0] mm_interconnect_0_uart_0_s1_readdata;                                   // uart_0:readdata -> mm_interconnect_0:uart_0_s1_readdata
+	wire   [2:0] mm_interconnect_0_uart_0_s1_address;                                    // mm_interconnect_0:uart_0_s1_address -> uart_0:address
+	wire         mm_interconnect_0_uart_0_s1_read;                                       // mm_interconnect_0:uart_0_s1_read -> uart_0:read_n
+	wire         mm_interconnect_0_uart_0_s1_begintransfer;                              // mm_interconnect_0:uart_0_s1_begintransfer -> uart_0:begintransfer
+	wire         mm_interconnect_0_uart_0_s1_write;                                      // mm_interconnect_0:uart_0_s1_write -> uart_0:write_n
+	wire  [15:0] mm_interconnect_0_uart_0_s1_writedata;                                  // mm_interconnect_0:uart_0_s1_writedata -> uart_0:writedata
 	wire         irq_mapper_receiver0_irq;                                               // jtag_uart_0:av_irq -> irq_mapper:receiver0_irq
 	wire         irq_mapper_receiver1_irq;                                               // epcs_flash_controller_0:irq -> irq_mapper:receiver1_irq
+	wire         irq_mapper_receiver2_irq;                                               // uart_0:irq -> irq_mapper:receiver2_irq
 	wire  [31:0] nios2_irq_irq;                                                          // irq_mapper:sender_irq -> nios2:irq
-	wire         rst_controller_reset_out_reset;                                         // rst_controller:reset_out -> [epcs_flash_controller_0:reset_n, mm_interconnect_0:epcs_flash_controller_0_reset_reset_bridge_in_reset_reset]
-	wire         rst_controller_reset_out_reset_req;                                     // rst_controller:reset_req -> epcs_flash_controller_0:reset_req
+	wire         rst_controller_reset_out_reset;                                         // rst_controller:reset_out -> [epcs_flash_controller_0:reset_n, mm_interconnect_0:epcs_flash_controller_0_reset_reset_bridge_in_reset_reset, uart_0:reset_n]
+	wire         rst_controller_reset_out_reset_req;                                     // rst_controller:reset_req -> [epcs_flash_controller_0:reset_req, rst_translator:reset_req_in]
 	wire         rst_controller_001_reset_out_reset;                                     // rst_controller_001:reset_out -> [irq_mapper:reset, jtag_uart_0:rst_n, mm_interconnect_0:nios2_reset_reset_bridge_in_reset_reset, nios2:reset_n, pio_0:reset_n, ram:reset, rst_translator_001:in_reset, sdram_0:reset_n, sdram_1:reset_n, sysid_qsys_0:reset_n]
 	wire         rst_controller_001_reset_out_reset_req;                                 // rst_controller_001:reset_req -> [nios2:reset_req, ram:reset_req, rst_translator_001:reset_req_in]
 	wire         nios2_debug_reset_request_reset;                                        // nios2:debug_reset_request -> rst_controller_001:reset_in1
@@ -242,6 +252,21 @@ module qsys (
 		.address  (mm_interconnect_0_sysid_qsys_0_control_slave_address)   //              .address
 	);
 
+	qsys_uart_0 uart_0 (
+		.clk           (clk_clk),                                   //                 clk.clk
+		.reset_n       (~rst_controller_reset_out_reset),           //               reset.reset_n
+		.address       (mm_interconnect_0_uart_0_s1_address),       //                  s1.address
+		.begintransfer (mm_interconnect_0_uart_0_s1_begintransfer), //                    .begintransfer
+		.chipselect    (mm_interconnect_0_uart_0_s1_chipselect),    //                    .chipselect
+		.read_n        (~mm_interconnect_0_uart_0_s1_read),         //                    .read_n
+		.write_n       (~mm_interconnect_0_uart_0_s1_write),        //                    .write_n
+		.writedata     (mm_interconnect_0_uart_0_s1_writedata),     //                    .writedata
+		.readdata      (mm_interconnect_0_uart_0_s1_readdata),      //                    .readdata
+		.rxd           (uart0_rxd),                                 // external_connection.export
+		.txd           (uart0_txd),                                 //                    .export
+		.irq           (irq_mapper_receiver2_irq)                   //                 irq.irq
+	);
+
 	qsys_mm_interconnect_0 mm_interconnect_0 (
 		.clk_0_clk_clk                                             (clk_clk),                                                                //                                           clk_0_clk.clk
 		.epcs_flash_controller_0_reset_reset_bridge_in_reset_reset (rst_controller_reset_out_reset),                                         // epcs_flash_controller_0_reset_reset_bridge_in_reset.reset
@@ -312,7 +337,14 @@ module qsys (
 		.sdram_1_s1_waitrequest                                    (mm_interconnect_0_sdram_1_s1_waitrequest),                               //                                                    .waitrequest
 		.sdram_1_s1_chipselect                                     (mm_interconnect_0_sdram_1_s1_chipselect),                                //                                                    .chipselect
 		.sysid_qsys_0_control_slave_address                        (mm_interconnect_0_sysid_qsys_0_control_slave_address),                   //                          sysid_qsys_0_control_slave.address
-		.sysid_qsys_0_control_slave_readdata                       (mm_interconnect_0_sysid_qsys_0_control_slave_readdata)                   //                                                    .readdata
+		.sysid_qsys_0_control_slave_readdata                       (mm_interconnect_0_sysid_qsys_0_control_slave_readdata),                  //                                                    .readdata
+		.uart_0_s1_address                                         (mm_interconnect_0_uart_0_s1_address),                                    //                                           uart_0_s1.address
+		.uart_0_s1_write                                           (mm_interconnect_0_uart_0_s1_write),                                      //                                                    .write
+		.uart_0_s1_read                                            (mm_interconnect_0_uart_0_s1_read),                                       //                                                    .read
+		.uart_0_s1_readdata                                        (mm_interconnect_0_uart_0_s1_readdata),                                   //                                                    .readdata
+		.uart_0_s1_writedata                                       (mm_interconnect_0_uart_0_s1_writedata),                                  //                                                    .writedata
+		.uart_0_s1_begintransfer                                   (mm_interconnect_0_uart_0_s1_begintransfer),                              //                                                    .begintransfer
+		.uart_0_s1_chipselect                                      (mm_interconnect_0_uart_0_s1_chipselect)                                  //                                                    .chipselect
 	);
 
 	qsys_irq_mapper irq_mapper (
@@ -320,6 +352,7 @@ module qsys (
 		.reset         (rst_controller_001_reset_out_reset), // clk_reset.reset
 		.receiver0_irq (irq_mapper_receiver0_irq),           // receiver0.irq
 		.receiver1_irq (irq_mapper_receiver1_irq),           // receiver1.irq
+		.receiver2_irq (irq_mapper_receiver2_irq),           // receiver2.irq
 		.sender_irq    (nios2_irq_irq)                       //    sender.irq
 	);
 

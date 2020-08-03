@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'qsys'
  * SOPC Builder design path: ../../qsys.sopcinfo
  *
- * Generated: Sun Aug 02 21:34:28 CST 2020
+ * Generated: Mon Aug 03 23:57:43 CST 2020
  */
 
 /*
@@ -64,7 +64,7 @@
 #define ALT_CPU_BIG_ENDIAN 0
 #define ALT_CPU_BREAK_ADDR 0x01008820
 #define ALT_CPU_CPU_ARCH_NIOS2_R1
-#define ALT_CPU_CPU_FREQ 80000000u
+#define ALT_CPU_CPU_FREQ 150000000u
 #define ALT_CPU_CPU_ID_SIZE 1
 #define ALT_CPU_CPU_ID_VALUE 0x00000000
 #define ALT_CPU_CPU_IMPLEMENTATION "fast"
@@ -77,7 +77,7 @@
 #define ALT_CPU_FLASH_ACCELERATOR_LINES 0
 #define ALT_CPU_FLASH_ACCELERATOR_LINE_SIZE 0
 #define ALT_CPU_FLUSHDA_SUPPORTED
-#define ALT_CPU_FREQ 80000000
+#define ALT_CPU_FREQ 150000000
 #define ALT_CPU_HARDWARE_DIVIDE_PRESENT 1
 #define ALT_CPU_HARDWARE_MULTIPLY_PRESENT 1
 #define ALT_CPU_HARDWARE_MULX_PRESENT 1
@@ -106,7 +106,7 @@
 #define NIOS2_BIG_ENDIAN 0
 #define NIOS2_BREAK_ADDR 0x01008820
 #define NIOS2_CPU_ARCH_NIOS2_R1
-#define NIOS2_CPU_FREQ 80000000u
+#define NIOS2_CPU_FREQ 150000000u
 #define NIOS2_CPU_ID_SIZE 1
 #define NIOS2_CPU_ID_VALUE 0x00000000
 #define NIOS2_CPU_IMPLEMENTATION "fast"
@@ -149,6 +149,7 @@
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_AVALON_PIO
 #define __ALTERA_AVALON_SYSID_QSYS
+#define __ALTERA_AVALON_UART
 #define __ALTERA_NIOS2_GEN2
 
 
@@ -245,7 +246,7 @@
 #define PIO_0_DO_TEST_BENCH_WIRING 0
 #define PIO_0_DRIVEN_SIM_VALUE 0
 #define PIO_0_EDGE_TYPE "NONE"
-#define PIO_0_FREQ 80000000
+#define PIO_0_FREQ 150000000
 #define PIO_0_HAS_IN 0
 #define PIO_0_HAS_OUT 1
 #define PIO_0_HAS_TRI 0
@@ -281,8 +282,8 @@
 #define RAM_READ_DURING_WRITE_MODE "DONT_CARE"
 #define RAM_SINGLE_CLOCK_OP 0
 #define RAM_SIZE_MULTIPLE 1
-#define RAM_SIZE_VALUE 40960
-#define RAM_SPAN 40960
+#define RAM_SIZE_VALUE 20480
+#define RAM_SPAN 20480
 #define RAM_TYPE "altera_avalon_onchip_memory2"
 #define RAM_WRITABLE 1
 
@@ -318,11 +319,11 @@
 #define SDRAM_0_STARVATION_INDICATOR 0
 #define SDRAM_0_TRISTATE_BRIDGE_SLAVE ""
 #define SDRAM_0_TYPE "altera_avalon_new_sdram_controller"
-#define SDRAM_0_T_AC 4.8
+#define SDRAM_0_T_AC 5.5
 #define SDRAM_0_T_MRD 3
-#define SDRAM_0_T_RCD 15.0
+#define SDRAM_0_T_RCD 20.0
 #define SDRAM_0_T_RFC 70.0
-#define SDRAM_0_T_RP 15.0
+#define SDRAM_0_T_RP 20.0
 #define SDRAM_0_T_WR 14.0
 
 
@@ -359,9 +360,9 @@
 #define SDRAM_1_TYPE "altera_avalon_new_sdram_controller"
 #define SDRAM_1_T_AC 5.5
 #define SDRAM_1_T_MRD 3
-#define SDRAM_1_T_RCD 15.0
+#define SDRAM_1_T_RCD 20.0
 #define SDRAM_1_T_RFC 70.0
-#define SDRAM_1_T_RP 15.0
+#define SDRAM_1_T_RP 20.0
 #define SDRAM_1_T_WR 14.0
 
 
@@ -377,7 +378,32 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1596375101
+#define SYSID_QSYS_0_TIMESTAMP 1596470111
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
+
+
+/*
+ * uart_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_uart_0 altera_avalon_uart
+#define UART_0_BASE 0x1008700
+#define UART_0_BAUD 115200
+#define UART_0_DATA_BITS 8
+#define UART_0_FIXED_BAUD 1
+#define UART_0_FREQ 150000000
+#define UART_0_IRQ 2
+#define UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define UART_0_NAME "/dev/uart_0"
+#define UART_0_PARITY 'N'
+#define UART_0_SIM_CHAR_STREAM ""
+#define UART_0_SIM_TRUE_BAUD 0
+#define UART_0_SPAN 32
+#define UART_0_STOP_BITS 1
+#define UART_0_SYNC_REG_DEPTH 2
+#define UART_0_TYPE "altera_avalon_uart"
+#define UART_0_USE_CTS_RTS 0
+#define UART_0_USE_EOP_REGISTER 0
 
 #endif /* __SYSTEM_H_ */

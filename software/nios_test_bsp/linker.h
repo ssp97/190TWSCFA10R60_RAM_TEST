@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'qsys'
  * SOPC Builder design path: ../../qsys.sopcinfo
  *
- * Generated: Sun Aug 02 20:40:05 CST 2020
+ * Generated: Mon Aug 03 23:57:43 CST 2020
  */
 
 /*
@@ -68,7 +68,7 @@
 #define EPCS_FLASH_CONTROLLER_0_REGION_BASE 0x0
 #define EPCS_FLASH_CONTROLLER_0_REGION_SPAN 2048
 #define RAM_REGION_BASE 0x10000020
-#define RAM_REGION_SPAN 40928
+#define RAM_REGION_SPAN 20448
 #define RESET_REGION_BASE 0x10000000
 #define RESET_REGION_SPAN 32
 #define SDRAM_0_REGION_BASE 0x20000000

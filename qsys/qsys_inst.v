@@ -19,6 +19,8 @@
 		.sram1_dq      (<connected-to-sram1_dq>),      //      .dq
 		.sram1_dqm     (<connected-to-sram1_dqm>),     //      .dqm
 		.sram1_ras_n   (<connected-to-sram1_ras_n>),   //      .ras_n
-		.sram1_we_n    (<connected-to-sram1_we_n>)     //      .we_n
+		.sram1_we_n    (<connected-to-sram1_we_n>),    //      .we_n
+		.uart0_rxd     (<connected-to-uart0_rxd>),     // uart0.rxd
+		.uart0_txd     (<connected-to-uart0_txd>)      //      .txd
 	);
 

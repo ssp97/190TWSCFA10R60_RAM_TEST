@@ -20,7 +20,9 @@
 			sram1_dq      : inout std_logic_vector(31 downto 0) := (others => 'X'); -- dq
 			sram1_dqm     : out   std_logic_vector(3 downto 0);                     -- dqm
 			sram1_ras_n   : out   std_logic;                                        -- ras_n
-			sram1_we_n    : out   std_logic                                         -- we_n
+			sram1_we_n    : out   std_logic;                                        -- we_n
+			uart0_rxd     : in    std_logic                     := 'X';             -- rxd
+			uart0_txd     : out   std_logic                                         -- txd
 		);
 	end component qsys;
 

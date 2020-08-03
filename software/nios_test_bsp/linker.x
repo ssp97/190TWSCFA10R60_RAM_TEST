@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'qsys'
  * SOPC Builder design path: ../../qsys.sopcinfo
  *
- * Generated: Sun Aug 02 20:40:05 CST 2020
+ * Generated: Mon Aug 03 23:57:43 CST 2020
  */
 
 /*
@@ -52,7 +52,7 @@ MEMORY
 {
     epcs_flash_controller_0 : ORIGIN = 0x0, LENGTH = 2048
     reset : ORIGIN = 0x10000000, LENGTH = 32
-    ram : ORIGIN = 0x10000020, LENGTH = 40928
+    ram : ORIGIN = 0x10000020, LENGTH = 20448
     sdram_0 : ORIGIN = 0x20000000, LENGTH = 8388608
     sdram_1 : ORIGIN = 0x20800000, LENGTH = 8388608
 }
@@ -370,7 +370,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x1000a000;
+__alt_data_end = 0x10005000;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -386,4 +386,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x1000a000 );
+PROVIDE( __alt_heap_limit    = 0x10005000 );

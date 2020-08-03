@@ -6258,3 +6258,702 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 
 !ENTRY com.altera.sbtgui.launch 1 0 2020-08-02 21:34:55.962
 !MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+!SESSION 2020-08-02 23:45:53.757 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/program_d/ntelfpga/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/program_d/ntelfpga/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-08-02 23:46:08.666
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2020-08-02 23:46:23.798
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-02 23:47:08.707
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-02 23:47:12.956
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+!SESSION 2020-08-03 21:18:08.541 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/program_d/ntelfpga/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/program_d/ntelfpga/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-08-03 21:18:47.585
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2020-08-03 21:19:09.873
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 21:22:42.016
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 21:22:42.047
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 21:23:11.403
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 21:23:15.653
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+!SESSION 2020-08-03 21:26:07.616 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/program_d/ntelfpga/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/program_d/ntelfpga/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-08-03 21:26:25.641
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2020-08-03 21:26:38.406
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 21:33:55.488
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 21:33:59.747
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 21:47:54.783
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 21:47:59.056
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 21:55:24.298
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 21:55:28.584
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:02:51.999
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:02:56.269
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:03:53.811
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:03:58.074
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:04:20.466
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:04:21.281
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:04:25.554
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:04:43.891
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:04:44.710
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:04:48.984
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:05:04.373
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:05:05.196
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:05:09.467
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:05:40.106
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:05:40.913
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:05:45.182
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:06:09.789
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:06:10.606
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:06:14.897
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:07:53.038
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:07:53.853
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:07:58.561
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:08:49.129
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:08:53.592
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:22:07.536
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:22:11.822
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:22:49.142
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:22:53.601
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:30:33.313
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:30:37.584
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:43:57.381
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:44:01.653
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+!SESSION 2020-08-03 22:52:38.325 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/program_d/ntelfpga/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/program_d/ntelfpga/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-08-03 22:52:57.400
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2020-08-03 22:53:10.472
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: Read timed out. ; version: 1.100.0.v20160217-0435
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: Read timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.security.ssl.InputRecord.readFully(Unknown Source)
+	at sun.security.ssl.InputRecord.read(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:290)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:53:12.462
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:53:16.693
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 22:53:21.363
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 22:53:21.389
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:53:33.478
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:53:37.766
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:53:59.779
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:54:01.137
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:54:05.405
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:54:23.193
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:54:27.479
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 22:54:32.167
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 22:54:32.168
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:54:37.759
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:54:42.235
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:55:16.202
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 22:55:20.899
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:00:52.889
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:00:57.169
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+!SESSION 2020-08-03 23:09:04.441 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/program_d/ntelfpga/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/program_d/ntelfpga/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-08-03 23:09:10.230
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2020-08-03 23:09:27.076
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:09:59.899
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:10:04.139
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:10:08.818
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:10:08.833
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:10:13.119
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:10:17.385
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:10:22.083
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:10:22.084
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:10:35.894
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:10:40.149
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:10:44.827
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:10:44.828
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:11:03.434
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:11:07.727
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:11:12.397
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:11:12.398
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:11:39.220
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:11:43.488
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:11:48.199
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:11:48.200
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:12:11.247
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:12:15.518
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:12:20.212
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:12:20.214
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:19:20.487
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:19:24.774
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:21:04.719
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:21:05.537
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:21:09.808
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:25:55.879
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:25:55.880
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2020-08-03 23:26:15.355 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/program_d/ntelfpga/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/program_d/ntelfpga/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-08-03 23:26:19.181
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2020-08-03 23:26:32.399
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:27:20.009
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:27:20.040
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2020-08-03 23:32:47.402 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/program_d/ntelfpga/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/program_d/ntelfpga/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-08-03 23:32:49.895
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2020-08-03 23:33:06.253
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:33:27.717
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:33:31.977
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:33:36.642
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:33:36.654
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:33:42.578
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:33:46.856
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:33:51.523
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:33:51.524
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:34:17.472
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:34:21.744
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:34:26.432
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:34:26.434
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:35:32.361
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:35:36.630
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:35:41.328
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:35:41.329
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:36:01.789
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:36:06.055
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:36:10.751
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:36:10.752
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:42:08.282
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:42:12.553
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:43:28.429
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:43:29.250
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:43:33.529
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:43:59.732
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:44:04.006
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:48:14.451
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:48:19.250
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:48:23.916
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:48:23.918
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:48:32.966
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:48:37.237
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:48:41.916
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:48:41.917
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:48:57.672
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:49:01.944
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:49:06.631
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1009010, --id=0x0, /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-08-03 23:49:06.632
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:58:20.107
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1009010 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-08-03 23:58:24.393
+!MESSAGE Executing: [D:/program_d/ntelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1009010 --id=0x0 /cygdrive/d/project/FPGA/2020-07-31_first_qsys/software/nios_test/nios_test.elf]

@@ -20,7 +20,9 @@ module qsys (
 	sram1_dq,
 	sram1_dqm,
 	sram1_ras_n,
-	sram1_we_n);	
+	sram1_we_n,
+	uart0_rxd,
+	uart0_txd);	
 
 	input		clk_clk;
 	output		led_export;
@@ -43,4 +45,6 @@ module qsys (
 	output	[3:0]	sram1_dqm;
 	output		sram1_ras_n;
 	output		sram1_we_n;
+	input		uart0_rxd;
+	output		uart0_txd;
 endmodule
